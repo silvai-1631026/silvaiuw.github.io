@@ -1,0 +1,48 @@
+body{
+
+}
+
+p{
+
+}
+
+h3{
+
+}
+
+li{
+
+}
+
+#header{
+    border: solid 8px black;
+    width: 500px;
+}
+
+#header h1{
+
+}
+
+#LeftNav{
+    border:solid 8px black;
+}
+
+#LeftNav img{
+   
+}
+
+#LeftNav ul{
+   
+}
+
+#LeftNav h3{
+
+}
+
+#content{
+  border:solid 8px black;
+}
+
+#footer{
+   border:solid 8px black;
+}
