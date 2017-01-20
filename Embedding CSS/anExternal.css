@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Gill Sans';
+    color: lavenderblush
+}
+.image {
+    position:relative;
+}
+
+.text {
+    position:absolute;
+    text-align:center;
+    top: 50%;
+    right: 23%;
+    width: 100%
+}
