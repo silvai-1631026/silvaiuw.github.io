@@ -6,16 +6,18 @@
 	<title>Job Application</title>
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-image: url(dark_wood.png)">
+	
 <div class="container">
 
-<h2>Job Application</h2>
+<h2 style="font-family: 'Times New Roman', Times, serif;color:cadetblue;font-size: 300%">Application for Cuddle Buddy
+</h2>
 <p>&nbsp;</p>
 
 <form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
 
 	<fieldset class="form-horizontal" >
-		<legend>Account</legend>
+		<legend>Make An Account</legend>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Email</label>
 			<div class="col-sm-9">
@@ -39,9 +41,9 @@
 	<p>&nbsp;</p>
 
 	<fieldset class="form-horizontal" >
-		<legend>Personal Information</legend>
+		<legend>Information About You</legend>
 		<div class="form-group">
-			<label class="col-sm-3 control-label">Full name</label>
+			<label class="col-sm-3 control-label">Prefered Name</label>
 			<div class="col-sm-9">
 				<input class="form-control" type="text" name="name">
 			</div>
@@ -130,7 +132,7 @@
 	<fieldset>
 		<legend>Availability</legend>
 		<div class="form-group row">
-			<label class="col-sm-12 control-label">Are you legally able to be employed in this country?</label>
+			<label class="col-sm-12 control-label">Are you single?</label>
 			<div class="col-sm-offset-1 col-sm-11">
 				<div class="radio">
 					<label>
@@ -142,6 +144,27 @@
 						<input type="radio" name="legal" value="no">No
 					</label>
 				</div>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-12 control-label">Male/Female/Other?</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="Male">Male
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="Female">Female
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="Other">Other, specify below
+					</label>
+				</div>
+				<td><input class="form-control" type="answer" name="Other"></td>
 			</div>
 		</div>
 		<div class="form-group row">
@@ -179,33 +202,27 @@
 				<table class="table table-bordered">
 					<tr>
 						<td></td>
-						<th>Sun</th>
 						<th>Mon</th>
 						<th>Tue</th>
 						<th>Wed</th>
 						<th>Thu</th>
 						<th>Fri</th>
-						<th>Sat</th>
 					</tr>
 					<tr>
-						<th>From</th>
-						<td><input class="form-control" type="time" name="su_from"></td>
-						<td><input class="form-control" type="time" name="mo_from"></td>
-						<td><input class="form-control" type="time" name="tu_from"></td>
-						<td><input class="form-control" type="time" name="we_from"></td>
-						<td><input class="form-control" type="time" name="th_from"></td>
-						<td><input class="form-control" type="time" name="fr_from"></td>
-						<td><input class="form-control" type="time" name="sa_from"></td>
+						<th>Start</th>
+						<td><input class="form-control" type="time" name="mo_start"></td>
+						<td><input class="form-control" type="time" name="tu_start"></td>
+						<td><input class="form-control" type="time" name="we_start"></td>
+						<td><input class="form-control" type="time" name="th_start"></td>
+						<td><input class="form-control" type="time" name="fr_start"></td>
 					</tr>
 					<tr>
 						<th>Until</th>
-						<td><input class="form-control" type="time" name="su_until"></td>
 						<td><input class="form-control" type="time" name="mo_until"></td>
 						<td><input class="form-control" type="time" name="tu_until"></td>
 						<td><input class="form-control" type="time" name="we_until"></td>
 						<td><input class="form-control" type="time" name="th_until"></td>
 						<td><input class="form-control" type="time" name="fr_until"></td>
-						<td><input class="form-control" type="time" name="sa_until"></td>
 					</tr>
 				</table>
 			</div>
@@ -215,14 +232,18 @@
 	<p>&nbsp;</p>
 
 	<fieldset>
-		<legend>Personal Statement</legend>
+		<legend style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:indianred;">Reasons to Cuddle</legend>
 		<div class="form-group">
-			<label class="control-label">Why do you deserve this job?</label>
-			<textarea class="form-control" name="deserve" rows="6"></textarea>
+			<label class="control-label" style="font-family: fantasy;color:brown;font-size: 120%;">Why do you enjoy cuddling?</label>
+			<textarea class="form-control" name="enjoy" rows="6"></textarea>
 		</div>
 		<div class="form-group">
-			<label class="control-label">Describe a recent project</label>
-			<textarea class="form-control" name="project" rows="6"></textarea>
+			<label class="control-label" style="color:tomato;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 50%;">What qualities do you have that make you a great cuddler?</label>
+			<textarea class="form-control" name="qualities" rows="6"></textarea>
+		</div>
+		<div class="form-group">
+			<label class="control-label" style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:yellowgreen;font-weight: bold;">Why are you wanting to have a cuddling job?</label>
+			<textarea class="form-control" name="wanting" rows="6"></textarea>
 		</div>
 	</fieldset>
 
